@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFC91DE625C018E80038561E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91DE525C018E80038561E /* AppDelegate.swift */; };
+		CFC91DEA25C018E80038561E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91DE925C018E80038561E /* ViewController.swift */; };
+		CFC91DED25C018E80038561E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC91DEB25C018E80038561E /* Main.storyboard */; };
+		CFC91DEF25C018EC0038561E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC91DEE25C018EC0038561E /* Assets.xcassets */; };
+		CFC91DF225C018EC0038561E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC91DF025C018EC0038561E /* LaunchScreen.storyboard */; };
+		CFC91DFD25C018ED0038561E /* MoshiSleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91DFC25C018ED0038561E /* MoshiSleepTests.swift */; };
+		CFC91E0825C018ED0038561E /* MoshiSleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E0725C018ED0038561E /* MoshiSleepUITests.swift */; };
+		CFC91E2E25C01CDB0038561E /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E2D25C01CDB0038561E /* NetworkRouter.swift */; };
+		CFC91E3325C01CE50038561E /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E3225C01CE50038561E /* NetworkLogger.swift */; };
+		CFC91E3825C01CF10038561E /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E3725C01CF10038561E /* HTTPTask.swift */; };
+		CFC91E4025C01CFC0038561E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E3F25C01CFC0038561E /* HTTPMethod.swift */; };
+		CFC91E4525C01D050038561E /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E4425C01D050038561E /* EndPoint.swift */; };
+		CFC91E4D25C01D130038561E /* ApiEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E4C25C01D130038561E /* ApiEndPoint.swift */; };
+		CFC91E5225C01D200038561E /* JSONEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E5125C01D200038561E /* JSONEncoding.swift */; };
+		CFC91E5A25C01D360038561E /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E5925C01D360038561E /* ParameterEncoding.swift */; };
+		CFC91E5F25C01D4E0038561E /* URLEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E5E25C01D4E0038561E /* URLEncoding.swift */; };
+		CFC91E6425C01D580038561E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E6325C01D580038561E /* NetworkManager.swift */; };
+		CFC91E6C25C01EC90038561E /* CityWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E6B25C01EC90038561E /* CityWeather.swift */; };
+		CFC91E7125C01F080038561E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E7025C01F080038561E /* ImageLoader.swift */; };
+		CFC91E7625C01F1E0038561E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E7525C01F1E0038561E /* Extensions.swift */; };
+		CFC91E7B25C01F230038561E /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E7A25C01F230038561E /* Utilities.swift */; };
+		CFC91E8025C01F330038561E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E7F25C01F330038561E /* Constants.swift */; };
+		CFC91E8825C024300038561E /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC91E8725C024300038561E /* ResponseError.swift */; };
+		CFE2DDC625C030D2006C2BF0 /* LoadingTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2DDC525C030D2006C2BF0 /* LoadingTableCell.swift */; };
+		CFE2DDCD25C03363006C2BF0 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2DDCB25C03363006C2BF0 /* WeatherCell.swift */; };
+		CFE2DDD625C03BE5006C2BF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2DDD525C03BE5006C2BF0 /* DetailViewController.swift */; };
+		CFE2DDDD25C0477A006C2BF0 /* WeatherDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2DDDB25C0477A006C2BF0 /* WeatherDetailCell.swift */; };
+		CFE2DDDE25C0477A006C2BF0 /* WeatherDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFE2DDDC25C0477A006C2BF0 /* WeatherDetailCell.xib */; };
+		CFE2DDE325C069CA006C2BF0 /* MapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2DDE225C069CA006C2BF0 /* MapCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFC91DF925C018ED0038561E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC91DDA25C018E80038561E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC91DE125C018E80038561E;
+			remoteInfo = MoshiSleep;
+		};
+		CFC91E0425C018ED0038561E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC91DDA25C018E80038561E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC91DE125C018E80038561E;
+			remoteInfo = MoshiSleep;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFC91DE225C018E80038561E /* MoshiSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoshiSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC91DE525C018E80038561E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFC91DE925C018E80038561E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFC91DEC25C018E80038561E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFC91DEE25C018EC0038561E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFC91DF125C018EC0038561E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFC91DF325C018EC0038561E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC91DF825C018ED0038561E /* MoshiSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoshiSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC91DFC25C018ED0038561E /* MoshiSleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoshiSleepTests.swift; sourceTree = "<group>"; };
+		CFC91DFE25C018ED0038561E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC91E0325C018ED0038561E /* MoshiSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoshiSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC91E0725C018ED0038561E /* MoshiSleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoshiSleepUITests.swift; sourceTree = "<group>"; };
+		CFC91E0925C018ED0038561E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC91E2D25C01CDB0038561E /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		CFC91E3225C01CE50038561E /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		CFC91E3725C01CF10038561E /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		CFC91E3F25C01CFC0038561E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		CFC91E4425C01D050038561E /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		CFC91E4C25C01D130038561E /* ApiEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndPoint.swift; sourceTree = "<group>"; };
+		CFC91E5125C01D200038561E /* JSONEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncoding.swift; sourceTree = "<group>"; };
+		CFC91E5925C01D360038561E /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		CFC91E5E25C01D4E0038561E /* URLEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncoding.swift; sourceTree = "<group>"; };
+		CFC91E6325C01D580038561E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CFC91E6B25C01EC90038561E /* CityWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityWeather.swift; sourceTree = "<group>"; };
+		CFC91E7025C01F080038561E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		CFC91E7525C01F1E0038561E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFC91E7A25C01F230038561E /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		CFC91E7F25C01F330038561E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CFC91E8725C024300038561E /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		CFE2DDC525C030D2006C2BF0 /* LoadingTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableCell.swift; sourceTree = "<group>"; };
+		CFE2DDCB25C03363006C2BF0 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		CFE2DDD525C03BE5006C2BF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CFE2DDDB25C0477A006C2BF0 /* WeatherDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailCell.swift; sourceTree = "<group>"; };
+		CFE2DDDC25C0477A006C2BF0 /* WeatherDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherDetailCell.xib; sourceTree = "<group>"; };
+		CFE2DDE225C069CA006C2BF0 /* MapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC91DDF25C018E80038561E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91DF525C018ED0038561E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91E0025C018ED0038561E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFC91DD925C018E80038561E = {
+			isa = PBXGroup;
+			children = (
+				CFC91DE425C018E80038561E /* MoshiSleep */,
+				CFC91DFB25C018ED0038561E /* MoshiSleepTests */,
+				CFC91E0625C018ED0038561E /* MoshiSleepUITests */,
+				CFC91DE325C018E80038561E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC91DE325C018E80038561E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DE225C018E80038561E /* MoshiSleep.app */,
+				CFC91DF825C018ED0038561E /* MoshiSleepTests.xctest */,
+				CFC91E0325C018ED0038561E /* MoshiSleepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC91DE425C018E80038561E /* MoshiSleep */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DE525C018E80038561E /* AppDelegate.swift */,
+				CFC91E2725C01BAF0038561E /* Helpers */,
+				CFC91E2625C01BA80038561E /* Views */,
+				CFC91E2525C01BA20038561E /* ViewControllers */,
+				CFC91E2425C01B980038561E /* Models */,
+				CFC91E2825C01BC50038561E /* Networking */,
+				CFC91E2325C01B8D0038561E /* Storyboards */,
+				CFC91DEE25C018EC0038561E /* Assets.xcassets */,
+				CFC91DF325C018EC0038561E /* Info.plist */,
+				CFC91E2225C01B7F0038561E /* Supporting Files */,
+			);
+			path = MoshiSleep;
+			sourceTree = "<group>";
+		};
+		CFC91DFB25C018ED0038561E /* MoshiSleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DFC25C018ED0038561E /* MoshiSleepTests.swift */,
+				CFC91DFE25C018ED0038561E /* Info.plist */,
+			);
+			path = MoshiSleepTests;
+			sourceTree = "<group>";
+		};
+		CFC91E0625C018ED0038561E /* MoshiSleepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E0725C018ED0038561E /* MoshiSleepUITests.swift */,
+				CFC91E0925C018ED0038561E /* Info.plist */,
+			);
+			path = MoshiSleepUITests;
+			sourceTree = "<group>";
+		};
+		CFC91E2225C01B7F0038561E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DF025C018EC0038561E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CFC91E2325C01B8D0038561E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DEB25C018E80038561E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CFC91E2425C01B980038561E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E6B25C01EC90038561E /* CityWeather.swift */,
+				CFC91E8725C024300038561E /* ResponseError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CFC91E2525C01BA20038561E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91DE925C018E80038561E /* ViewController.swift */,
+				CFE2DDD525C03BE5006C2BF0 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CFC91E2625C01BA80038561E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2DDCA25C0333B006C2BF0 /* Main */,
+				CFE2DDDA25C04744006C2BF0 /* Detail */,
+				CFE2DDC425C030C1006C2BF0 /* Utils */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFC91E2725C01BAF0038561E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E7525C01F1E0038561E /* Extensions.swift */,
+				CFC91E7A25C01F230038561E /* Utilities.swift */,
+				CFC91E7F25C01F330038561E /* Constants.swift */,
+				CFC91E7025C01F080038561E /* ImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CFC91E2825C01BC50038561E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E2C25C01CCA0038561E /* Manager */,
+				CFC91E2B25C01CC50038561E /* Encoding */,
+				CFC91E2A25C01CBC0038561E /* EndPoint */,
+				CFC91E2925C01CB10038561E /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CFC91E2925C01CB10038561E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E4425C01D050038561E /* EndPoint.swift */,
+				CFC91E3F25C01CFC0038561E /* HTTPMethod.swift */,
+				CFC91E3725C01CF10038561E /* HTTPTask.swift */,
+				CFC91E3225C01CE50038561E /* NetworkLogger.swift */,
+				CFC91E2D25C01CDB0038561E /* NetworkRouter.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CFC91E2A25C01CBC0038561E /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E4C25C01D130038561E /* ApiEndPoint.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		CFC91E2B25C01CC50038561E /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E5125C01D200038561E /* JSONEncoding.swift */,
+				CFC91E5925C01D360038561E /* ParameterEncoding.swift */,
+				CFC91E5E25C01D4E0038561E /* URLEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		CFC91E2C25C01CCA0038561E /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CFC91E6325C01D580038561E /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CFE2DDC425C030C1006C2BF0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2DDC525C030D2006C2BF0 /* LoadingTableCell.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CFE2DDCA25C0333B006C2BF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2DDCB25C03363006C2BF0 /* WeatherCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CFE2DDDA25C04744006C2BF0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CFE2DDDB25C0477A006C2BF0 /* WeatherDetailCell.swift */,
+				CFE2DDDC25C0477A006C2BF0 /* WeatherDetailCell.xib */,
+				CFE2DDE225C069CA006C2BF0 /* MapCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC91DE125C018E80038561E /* MoshiSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC91E0C25C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleep" */;
+			buildPhases = (
+				CFC91DDE25C018E80038561E /* Sources */,
+				CFC91DDF25C018E80038561E /* Frameworks */,
+				CFC91DE025C018E80038561E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoshiSleep;
+			productName = MoshiSleep;
+			productReference = CFC91DE225C018E80038561E /* MoshiSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFC91DF725C018ED0038561E /* MoshiSleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC91E0F25C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleepTests" */;
+			buildPhases = (
+				CFC91DF425C018ED0038561E /* Sources */,
+				CFC91DF525C018ED0038561E /* Frameworks */,
+				CFC91DF625C018ED0038561E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC91DFA25C018ED0038561E /* PBXTargetDependency */,
+			);
+			name = MoshiSleepTests;
+			productName = MoshiSleepTests;
+			productReference = CFC91DF825C018ED0038561E /* MoshiSleepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFC91E0225C018ED0038561E /* MoshiSleepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC91E1225C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleepUITests" */;
+			buildPhases = (
+				CFC91DFF25C018ED0038561E /* Sources */,
+				CFC91E0025C018ED0038561E /* Frameworks */,
+				CFC91E0125C018ED0038561E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC91E0525C018ED0038561E /* PBXTargetDependency */,
+			);
+			name = MoshiSleepUITests;
+			productName = MoshiSleepUITests;
+			productReference = CFC91E0325C018ED0038561E /* MoshiSleepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC91DDA25C018E80038561E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CFC91DE125C018E80038561E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CFC91DF725C018ED0038561E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CFC91DE125C018E80038561E;
+					};
+					CFC91E0225C018ED0038561E = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CFC91DE125C018E80038561E;
+					};
+				};
+			};
+			buildConfigurationList = CFC91DDD25C018E80038561E /* Build configuration list for PBXProject "MoshiSleep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC91DD925C018E80038561E;
+			productRefGroup = CFC91DE325C018E80038561E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC91DE125C018E80038561E /* MoshiSleep */,
+				CFC91DF725C018ED0038561E /* MoshiSleepTests */,
+				CFC91E0225C018ED0038561E /* MoshiSleepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC91DE025C018E80038561E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC91DF225C018EC0038561E /* LaunchScreen.storyboard in Resources */,
+				CFE2DDDE25C0477A006C2BF0 /* WeatherDetailCell.xib in Resources */,
+				CFC91DEF25C018EC0038561E /* Assets.xcassets in Resources */,
+				CFC91DED25C018E80038561E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91DF625C018ED0038561E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91E0125C018ED0038561E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC91DDE25C018E80038561E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE2DDE325C069CA006C2BF0 /* MapCell.swift in Sources */,
+				CFC91E7125C01F080038561E /* ImageLoader.swift in Sources */,
+				CFC91E8025C01F330038561E /* Constants.swift in Sources */,
+				CFC91E6425C01D580038561E /* NetworkManager.swift in Sources */,
+				CFC91E8825C024300038561E /* ResponseError.swift in Sources */,
+				CFC91E5225C01D200038561E /* JSONEncoding.swift in Sources */,
+				CFC91E3325C01CE50038561E /* NetworkLogger.swift in Sources */,
+				CFE2DDD625C03BE5006C2BF0 /* DetailViewController.swift in Sources */,
+				CFC91E5A25C01D360038561E /* ParameterEncoding.swift in Sources */,
+				CFC91E5F25C01D4E0038561E /* URLEncoding.swift in Sources */,
+				CFC91E7B25C01F230038561E /* Utilities.swift in Sources */,
+				CFC91E3825C01CF10038561E /* HTTPTask.swift in Sources */,
+				CFC91E4025C01CFC0038561E /* HTTPMethod.swift in Sources */,
+				CFC91DEA25C018E80038561E /* ViewController.swift in Sources */,
+				CFE2DDCD25C03363006C2BF0 /* WeatherCell.swift in Sources */,
+				CFC91DE625C018E80038561E /* AppDelegate.swift in Sources */,
+				CFC91E7625C01F1E0038561E /* Extensions.swift in Sources */,
+				CFC91E4525C01D050038561E /* EndPoint.swift in Sources */,
+				CFC91E2E25C01CDB0038561E /* NetworkRouter.swift in Sources */,
+				CFC91E6C25C01EC90038561E /* CityWeather.swift in Sources */,
+				CFC91E4D25C01D130038561E /* ApiEndPoint.swift in Sources */,
+				CFE2DDC625C030D2006C2BF0 /* LoadingTableCell.swift in Sources */,
+				CFE2DDDD25C0477A006C2BF0 /* WeatherDetailCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91DF425C018ED0038561E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC91DFD25C018ED0038561E /* MoshiSleepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC91DFF25C018ED0038561E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC91E0825C018ED0038561E /* MoshiSleepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFC91DFA25C018ED0038561E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC91DE125C018E80038561E /* MoshiSleep */;
+			targetProxy = CFC91DF925C018ED0038561E /* PBXContainerItemProxy */;
+		};
+		CFC91E0525C018ED0038561E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC91DE125C018E80038561E /* MoshiSleep */;
+			targetProxy = CFC91E0425C018ED0038561E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFC91DEB25C018E80038561E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC91DEC25C018E80038561E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFC91DF025C018EC0038561E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC91DF125C018EC0038561E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFC91E0A25C018ED0038561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFC91E0B25C018ED0038561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC91E0D25C018ED0038561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFC91E0E25C018ED0038561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFC91E1025C018ED0038561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoshiSleep.app/MoshiSleep";
+			};
+			name = Debug;
+		};
+		CFC91E1125C018ED0038561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoshiSleep.app/MoshiSleep";
+			};
+			name = Release;
+		};
+		CFC91E1325C018ED0038561E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoshiSleep;
+			};
+			name = Debug;
+		};
+		CFC91E1425C018ED0038561E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZTK9P4T35V;
+				INFOPLIST_FILE = MoshiSleepUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.MoshiSleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoshiSleep;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC91DDD25C018E80038561E /* Build configuration list for PBXProject "MoshiSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC91E0A25C018ED0038561E /* Debug */,
+				CFC91E0B25C018ED0038561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC91E0C25C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC91E0D25C018ED0038561E /* Debug */,
+				CFC91E0E25C018ED0038561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC91E0F25C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC91E1025C018ED0038561E /* Debug */,
+				CFC91E1125C018ED0038561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC91E1225C018ED0038561E /* Build configuration list for PBXNativeTarget "MoshiSleepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC91E1325C018ED0038561E /* Debug */,
+				CFC91E1425C018ED0038561E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFC91DDA25C018E80038561E /* Project object */;
+}
